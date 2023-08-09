@@ -1,0 +1,8 @@
+<div>
+    <input type="text" #nameInput>
+    <button (click)="displayGreeting(nameInput.value)">Show Greeting</button>
+  </div>
+  <div *ngIf="greeting">
+    <p>Hello, {{ greeting }}!</p>
+  </div>
+  
